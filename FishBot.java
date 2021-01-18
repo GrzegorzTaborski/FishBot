@@ -50,18 +50,18 @@ class Digit {
     private Point third;
     private Point fourth;
 
-    public Digit(Point fisrt, Point second, Point third, Point czwarty) {
+    public Digit(Point fisrt, Point second, Point third, Point fourth) {
         this.fisrt = fisrt;
         this.second = second;
         this.third = third;
-        this.fourth = czwarty;
+        this.fourth = fourth;
     }
 
     public Digit(Digit c) {
         this.fisrt = c.getFisrt();
         this.second = c.getSecond();
         this.third = c.getThird();
-        this.fourth = c.getCzwarty();
+        this.fourth = c.getFourth();
     }
 
 
@@ -72,12 +72,12 @@ class Digit {
 
     }
 
-    public Point getCzwarty() {
+    public Point getFourth() {
         return fourth;
     }
 
-    public void setCzwarty(Point czwarty) {
-        this.fourth = czwarty;
+    public void setFourth(Point fourth) {
+        this.fourth = fourth;
     }
 
     public Point getFisrt() {
