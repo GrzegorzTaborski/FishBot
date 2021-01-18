@@ -119,7 +119,6 @@ public class FishBot {
         }
 
         Rectangle rectangle = new Rectangle(0, 31, 200, 18);
-
         BufferedImage screen = robot.createScreenCapture(rectangle);
         checkNumber(screen);
     }
@@ -193,8 +192,6 @@ public class FishBot {
         Random random = new Random();
         try {
             String result = instance.doOCR(screen);
-            System.out.println(result);
-            System.out.println(result.charAt(9));
             fishing(Integer.parseInt(String.valueOf(result.charAt(9))));
 
             System.out.println(result);
