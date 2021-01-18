@@ -10,7 +10,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Random;
 
- class Point {
+class Point {
     private int x;
     private int y;
 
@@ -42,69 +42,6 @@ import java.util.Random;
                 ", y=" + y +
                 '}';
     }
-}
-
-class Digit {
-    private Point fisrt;
-    private Point second;
-    private Point third;
-    private Point fourth;
-
-    public Digit(Point fisrt, Point second, Point third, Point fourth) {
-        this.fisrt = fisrt;
-        this.second = second;
-        this.third = third;
-        this.fourth = fourth;
-    }
-
-    public Digit(Digit c) {
-        this.fisrt = c.getFisrt();
-        this.second = c.getSecond();
-        this.third = c.getThird();
-        this.fourth = c.getFourth();
-    }
-
-
-    public Digit(Point fisrt, Point second, Point third) {
-        this.fisrt = fisrt;
-        this.second = second;
-        this.fourth = third;
-
-    }
-
-    public Point getFourth() {
-        return fourth;
-    }
-
-    public void setFourth(Point fourth) {
-        this.fourth = fourth;
-    }
-
-    public Point getFisrt() {
-        return fisrt;
-    }
-
-    public void setFisrt(Point fisrt) {
-        this.fisrt = fisrt;
-    }
-
-    public Point getSecond() {
-        return second;
-    }
-
-    public void setSecond(Point second) {
-        this.second = second;
-    }
-
-    public Point getThird() {
-        return third;
-    }
-
-    public void setThird(Point third) {
-        this.third = third;
-    }
-
-
 }
 
 
@@ -176,9 +113,9 @@ public class FishBot {
 
         for (int i = 0; i < amountOfClick; i++) {
             robot.delay(100 + (random.nextInt(50)));
-            robot.keyPress(32); //spacja
+            robot.keyPress(32); //space
             robot.delay(random.nextInt(10 + (random.nextInt(30))));
-            robot.keyRelease(32);// puszczenie spacji
+            robot.keyRelease(32);// release space
         }
         robot.delay(3000);
         start();
