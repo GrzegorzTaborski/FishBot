@@ -193,8 +193,6 @@ public class FishBot {
         try {
             String result = instance.doOCR(screen);
             fishing(Integer.parseInt(String.valueOf(result.charAt(9))));
-
-            System.out.println(result);
         } catch (TesseractException e) {
             System.out.println("exception" + e.getMessage());
         } finally {
