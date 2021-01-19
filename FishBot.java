@@ -131,10 +131,7 @@ public class FishBot {
             String result = instance.doOCR(screen);
             fishing(Integer.parseInt(String.valueOf(result.charAt(9))));
         } catch (TesseractException e) {
-            System.out.println("exception" + e.getMessage());
-        } finally {
-            //if screenshot fail and takes photo of another event like player killed boos etc. will generate random value
-            fishing(random.nextInt(5) + 1);
+          fishing(random.nextInt(5) + 1);
         }
     }
 
