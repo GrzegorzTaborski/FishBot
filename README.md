@@ -1,1 +1,1 @@
-Fishbot wrote by myself it's supposed to be a multithread app but currently i don't have time to get 6 account in game to be able to test if it working properly maybe someday i'll finish it.
+
